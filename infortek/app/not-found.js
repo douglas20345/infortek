@@ -1,16 +1,24 @@
+// Autor: Marcelo Douglas
+// Desenvolvido por: Sr. Wachelo
+
+
 import BreadcrumbSection from "@/component/breadcrumb/BreadcrumbSection";
 import ErrorSection from "@/component/error/ErrorSection";
 import Layout from "@/component/layout/Layout";
 
+// Metadados para a página
 export const metadata = {
-  title: 'Eduor 404 Page',
-  description: 'Developed by Azizur Rahman',
+  title: 'Página 404 da Infortek',
+  description: 'Desenvolvido por Marcelo Douglas',
 }
+
+// Componente principal para a página 404
 export default function NotFound() {
   return (
-        <Layout>
-            <BreadcrumbSection header='404 Page' title='404'/>
-            <ErrorSection type='Page'/>
-        </Layout>
+    // Componente de layout contendo seções de navegação e erro
+    <Layout>
+      <BreadcrumbSection header='Página 404' title='404'/>
+      <ErrorSection type='Página'/>
+    </Layout>
   )
 }
